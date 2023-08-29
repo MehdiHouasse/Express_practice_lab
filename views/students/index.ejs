@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <h1>Student List</h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <%- include('../partials/student', { student }) %>
+    <% }); %>
+  </ul>
+</body>
+</html>
